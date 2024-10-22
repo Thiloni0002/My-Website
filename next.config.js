@@ -36,8 +36,8 @@ const nextConfig = {
     ],
     unoptimized: true, // Added to avoid image compression
   },
-  output: 'export', // Added for static export
-  distDir: 'dist',  // Output directory set to 'dist'
+  output: 'export',
+  distDir: 'dist',
 };
 
 module.exports = nextConfig;
