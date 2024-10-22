@@ -26,19 +26,18 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: yarn  # Caches Yarn dependencies
+          cache: yarn 
 
       - name: Install dependencies
-        run: yarn install  # Always use Yarn to install dependencies
+        run: yarn install
 
       - name: Build with Next.js
-        run: yarn next build  # Build your project using Yarn
+        run: yarn next build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist  # Ensure the output directory is ./dist
-
+          path: ./dist
   deploy:
     environment:
       name: github-pages

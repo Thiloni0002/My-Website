@@ -16,7 +16,6 @@ const Hero: FC = memo(() => {
           <div className="flex flex-col items-center gap-y-6 rounded-xl bg-black/40 p-6 text-center shadow-lg backdrop-blur-sm">
             <h1 className="text-4xl font-bold text-white sm:text-5xl lg:text-7xl overflow-hidden whitespace-nowrap">
               <span className="inline-block animate-typing">{name}</span>
-              <span className="inline-block animate-blink">|</span> {/* Optional blinking cursor */}
             </h1>
             {description}
             <div className="flex gap-x-4 text-neutral-100">
