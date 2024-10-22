@@ -24,6 +24,8 @@ const nextConfig = {
   swcMinify: true,
   trailingSlash: false,
   images: {
+    loader: "akamai",
+    path: "",
     remotePatterns: [
       {
         protocol: 'https',
@@ -38,6 +40,7 @@ const nextConfig = {
   },
   output: 'export',
   distDir: 'dist',
+  assetPrefix: "./"
 };
 
 module.exports = nextConfig;

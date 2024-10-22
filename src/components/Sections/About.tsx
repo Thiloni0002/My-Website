@@ -1,12 +1,13 @@
 import classNames from 'classnames';
 import Image from 'next/image';
 import {FC, memo} from 'react';
+import { prefix } from '../../config';
 
 import {aboutData, SectionId} from '../../data/data';
 import Section from '../Layout/Section';
 
 const About: FC = memo(() => {
-  const profileImageSrc = '/Black&white.jpeg';
+  const profileImageSrc = `${prefix}/Black&white.jpeg`;
   const {description, aboutItems} = aboutData;
 
   return (

@@ -21,7 +21,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        
+      
+      - name: Extract repository name
+        run: echo "BASE_PATH=/$(echo $GITHUB_REPOSITORY | cut -d '/' -f 2)" >> $GITHUB_ENV
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
