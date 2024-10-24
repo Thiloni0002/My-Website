@@ -24,7 +24,7 @@
   },
   "include": [
     "./src/**/*"
-  ],
+, "public/postcss.config.js"  ],
   "exclude": [
     "node_modules"
   ]

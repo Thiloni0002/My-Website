@@ -11,19 +11,11 @@ import {
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import heroImage from '../images/header-background.webp';
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
-import profilepic from '../images/profilepic.jpg';
+// import porfolioImage1 from '/images/portfolio/portfolio-1.jpeg';
+// import porfolioImage2 from '/images/portfolio/portfolio-2.jpeg';
+// import porfolioImage3 from '/images/portfolio/portfolio-3.jpeg';
+// import porfolioImage4 from '/images/portfolio/portfolio-4.jpeg';
+// import profilepic from '/images/Black&white.jpeg';
 import {
   About,
   ContactSection,
@@ -69,12 +61,13 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  * Hero section
  */
 export const heroData: Hero = {
-  imageSrc: heroImage,
+  // Remove or set imageSrc to null/empty string
+  imageSrc: '', // or use null if you prefer
   name: 'Yashora Thiloni',
   description: <span>Welcome to my personal website!</span>, // JSX Element for description
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: '/resume.pdf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -88,11 +81,12 @@ export const heroData: Hero = {
 };
 
 
+
 /**
  * About section
  */
 export const aboutData: About = {
-  profileImageSrc: profilepic,
+  profileImageSrc: '/images/portfolio/Black&white.jpeg',
   description:`Hello! I’m currently navigating the exciting world of Information Technology as an undergraduate student at the University of Sri Jayawardenapura. With a solid foundation in both theoretical knowledge and practical experience, I aim to bridge the gap between technology and real-world solutions, particularly in the UI/UX field. In my free time, I enjoy spending quality moments with family and friends, watching movies, and listening to music.`,
   aboutItems: [
     {label: 'Age', text: 'Twenty Two', Icon: CalendarIcon},
@@ -197,68 +191,27 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'Project title 1',
     description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
-    image: porfolioImage1,
+    image: '/images/portfolio/portfolio-1.jpeg',
   },
   {
     title: 'Project title 2',
     description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
-    image: porfolioImage2,
+    image: '/images/portfolio/portfolio-2.jpeg',
   },
   {
     title: 'Project title 3',
     description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
-    image: porfolioImage3,
+    image: '/images/portfolio/portfolio-3.jpeg',
   },
   {
     title: 'Project title 4',
     description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
-    image: porfolioImage4,
+    image: '/images/portfolio/portfolio-4.jpeg',
   },
-  {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage5,
-  },
-  {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage6,
-  },
-  {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage7,
-  },
-  {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage8,
-  },
-  {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage9,
-  },
-  {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage10,
-  },
-  {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage11,
-  },
+  
 ];
 
 /**
