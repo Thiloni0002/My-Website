@@ -3,31 +3,32 @@ import { FC, memo } from 'react';
 
 import { SectionId } from '../../data/data';
 import Section from '../Layout/Section';
+import { prefix } from '../../config';
 
 const portfolioItems = [
   {
     title: 'Hospital Management System',
     description: 'A group project using Java to build a system for managing hospital data, including patient records, appointments, and staff management.',
     url: 'https://github.com/NiromiKaumini/--Hospital_Manegement_systemHospital-Manegement-system',
-    image: '/images/portfolio/portfolio-1.jpeg',
+    image: `${prefix}/images/portfolio/portfolio-1.jpeg`,
   },
   {
     title: 'Wildlife Explorer Website',
     description: 'A wildlife-themed website built using Next.js and Tailwind CSS, showcasing different habitats like rivers, oceans, forests, and mountains.',
     url: 'https://github.com/FHSS-USJ/assignment-01-Thiloni0002',
-    image: '/images/portfolio/portfolio-2.jpeg',
+    image: `${prefix}/images/portfolio/portfolio-2.jpeg`,
   },
   {
     title: 'Movie Explorer App',
     description: 'A movie exploration app built using Next.js and the OMDb API, allowing users to search for movies and view details.',
     url: 'https://github.com/FHSS-USJ/assignment-02-Thiloni0002',
-    image: '/images/portfolio/portfolio-3.jpeg',
+    image: `${prefix}/images/portfolio/portfolio-3.jpeg`,
   },
   {
     title: 'Personal Website',
     description: 'A personal portfolio website built using Next.js, designed to showcase my skills, projects, and experiences.',
     url: 'https://github.com/FHSS-USJ/assignment-02-Thiloni0002',
-    image: '/images/portfolio/portfolio-4.jpeg',
+    image: `${prefix}/images/portfolio/portfolio-4.jpeg`,
   },
 ];
 
